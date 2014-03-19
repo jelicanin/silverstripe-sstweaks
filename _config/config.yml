@@ -1,0 +1,30 @@
+---
+Name: sstweaks
+Before: 'mysite/*'
+After: 'framework/*','cms/*'
+---
+
+Controller:
+  extensions:
+    - SSTweaksController
+
+ContentController:
+  extensions:
+    - SSTweaksContentController
+
+SiteConfig:
+  extensions:
+    - SSTweaksSiteConfig
+
+SiteTree:
+  extensions:
+    - SSTweaksSiteTree
+
+# GridFieldDetailForm:
+#   extensions:
+#     - SSTweaksModelAdminBaseDetailForm
+
+# GridFieldDetailForm_ItemRequest:
+#   extensions:
+#     - SSTweaksModelAdminBase_FieldDetailForm_ItemRequest
+
